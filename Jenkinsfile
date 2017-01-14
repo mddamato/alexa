@@ -14,7 +14,7 @@ node('master') {
   }
 
   stage('build app'){
-
+    sh "./gradlew fatJar"
   }
 
 
