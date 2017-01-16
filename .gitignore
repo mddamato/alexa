@@ -11,3 +11,7 @@
 hs_err_pid*
 
 */build/*
+pi-code/Raspberry-Pi.cert.pem
+pi-code/Raspberry-Pi.private.key
+pi-code/Raspberry-Pi.public.key
+pi-code/root-CA.crt
