@@ -1,0 +1,45 @@
+apply plugin: 'java'
+
+group = "alexa"
+version = '1.0'
+
+repositories {
+    jcenter()
+    mavenCentral()
+    flatDir {
+         dirs 'libs'
+     }
+}
+
+compileJava {
+    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_1_8
+}
+
+jar {
+  manifest {
+      attributes 'Main-Class': 'com.amazonaws.services.iot.client.sample.shadow.ShadowSample',
+              'Implementation-Title': 'Gradle Quickstart',
+              "Class-Path": 'libs/aws-iot-device-sdk-java-1.1.0.jar'
+  }
+}
+
+System.setProperty("java.net.preferIPv4Stack", "true")
+
+
+
+
+
+dependencies {
+
+    compile group: 'com.amazonaws', name: 'aws-iot-device-sdk-java', version: '1.1.0'
+    testCompile("org.mockito:mockito-all:1.10.19")
+    testCompile("junit:junit:4.12")
+    compile("org.projectlombok:lombok:1.16.8")
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.7.4'
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.7.4'
+
+}
