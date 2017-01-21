@@ -1,5 +1,6 @@
 
-pi-code/Raspberry-Pi.cert.pem
-pi-code/Raspberry-Pi.private.key
-pi-code/Raspberry-Pi.public.key
-pi-code/root-CA.crt
+pi-code-2/Raspberry-Pi.cert.pem
+pi-code-2/Raspberry-Pi.private.key
+pi-code-2/Raspberry-Pi.public.key
+pi-code-2/root-CA.crt
+pi-code-2/build/*
