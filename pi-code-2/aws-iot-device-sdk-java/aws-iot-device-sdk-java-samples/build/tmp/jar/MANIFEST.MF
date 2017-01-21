@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Implementation-Title: Gradle Quickstart
+Class-Path: libs/aws-iot-device-sdk-java-1.1.0.jar
+Main-Class: com.amazonaws.services.iot.client.sample.shadow.ShadowSamp
+ le
+
