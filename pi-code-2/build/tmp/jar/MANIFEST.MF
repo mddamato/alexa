@@ -1,6 +1,8 @@
 Manifest-Version: 1.0
 Implementation-Title: Gradle Quickstart
-Class-Path: libs/aws-iot-device-sdk-java-1.1.0.jar
+Class-Path: lib/aws-iot-device-sdk-java-1.1.0.jar lib/lombok-1.16.8.ja
+ r lib/jackson-databind-2.7.4.jar lib/jackson-core-2.7.4.jar lib/org.e
+ clipse.paho.client.mqttv3-1.1.0.jar lib/jackson-annotations-2.7.0.jar
 Main-Class: com.amazonaws.services.iot.client.sample.shadow.ShadowSamp
  le
 
